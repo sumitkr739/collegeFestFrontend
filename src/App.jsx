@@ -11,7 +11,7 @@ function App() {
       setError("");
       setStudent(null);
       const response = await axios.get(
-        `https://collegefestbackend-1.onrender.com/${enrollmentNo}`
+        `https://collegefestbackend-1.onrender.com`
       );
       setStudent(response.data);
     } catch (err) {
