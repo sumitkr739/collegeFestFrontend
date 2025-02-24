@@ -11,7 +11,7 @@ function App() {
       setError("");
       setStudent(null);
       const response = await axios.get(
-        `http://localhost:5000/api/students/${enrollmentNo}`
+        `https://collegefestbackend-1.onrender.com/${enrollmentNo}`
       );
       setStudent(response.data);
     } catch (err) {
