@@ -108,17 +108,17 @@ function App() {
               <p className="text-xl mt-2 font-bold text-teal-200">
                 <strong>Clan:</strong> {student.group}
               </p>
-              <p className="text-xl mt-2 font-bold text-teal-200">
-                <strong>WhatsApp Group:</strong>{" "}
-                <a
-                  href={student.whatsappgroup}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-300 underline"
-                >
-                  Join Here
-                </a>
-              </p>
+              <p className="text-xl mt-2 font-bold text-teal-200 relative z-20">
+  <strong>WhatsApp Group:</strong>{" "}
+  <a
+    href={student.whatsappgroup}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-300 underline hover:text-blue-200 transition-colors"
+  >
+    Join Here
+  </a>
+</p>
             </div>
           </motion.div>
         )}
